@@ -1,0 +1,183 @@
+/* General styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, .btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #1bbc9b;
+  padding: 15px 30px;
+  border-radius: 3px;
+  display: inline-block;
+  /*padding: top right bottom left;*/
+  /*padding: 10px 20px 30px 40px;*/
+}
+
+section {
+  padding: 40px 30px;
+}
+
+/* Navigation styling */
+nav {
+  background: black;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+nav ul {
+  padding: 0;
+  float: right;
+  margin-top: 40px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: #1bb9cb;
+}
+
+/* Header styling */
+header {
+  background: black url(../images/header-bg.jpg) center no-repeat;
+  color: white;
+  text-align: center;
+  height: 600px;
+  padding-top: 150px;
+}
+
+header h2 {
+  margin-bottom: 30px;
+}
+
+/* Features styling */
+.features {
+  text-align: center;
+}
+
+.features article {
+  width: 24%;
+  display: inline-block;
+}
+
+.features article .btn {
+  color: #1bbc9b;
+  background: white;
+  border: 1px solid #1bbc9b;
+  transition: all 0.5s ease;
+}
+
+.features article .btn:hover {
+  color: white;
+  background: #1bbc9b;
+}
+
+/*mockup styling*/
+.mockup {
+  text-align: center;
+  color: white;
+  background: white url(../images/mockup-bg.jpg) no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+}
+
+/*clients styling*/
+.clients {
+  background: #1bbc9b;
+  text-align: center;
+  color: white;
+}
+
+.clients ul {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.clients ul li {
+  display: inline-block;
+  max-width: 150px;
+  margin: 20px;
+}
+
+.clients .btn {
+  color: white;
+  background: #1bbc9b;
+  border: 1px solid white;
+  margin: 60px 0px 30px 0px;
+  transition: all .5s ease;
+}
+
+.clients .btn:hover {
+  background: white;
+  color: #1bbc9b;
+}
+
+/*footer styling*/
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 300px;
+}
+
+.footer ul {
+  padding: 0;
+  /*float: right;*/
+  margin-top: 20px;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-bottom:20px;
+  margin: 10px;
+}
+
+.footer ul li img {
+  max-width: 30px;
+  transition: all 0.5 ease;
+}
+
+.footer ul li img:hover {
+  opacity: .5;
+}
+
+/*media queries*/
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    float: none;
+  }
+
+  .features article {
+    width: 100%;
+    display: block;
+  }
+
+  .mockup img {
+    max-width: 100%;
+  }
+
+}
